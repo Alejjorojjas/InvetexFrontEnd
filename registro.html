@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/inicio.css">
+    <link rel="shortcut icon" href="images/logo2.ico" type="image/x-icon">
+    <title>Invetex</title>
+</head>
+<body>
+    <main>
+        <div class="login__contenedor">
+            <div class="login__contenedor__logo">
+                <img class="img-fluid" src="/images/logo.PNG" alt="Logo de Invetex">
+            </div>
+        </div>
+        <div class="login__contenedor login__fondo">
+            <div class="login__contenedor__formulario">
+                <form id = "myForm">
+                    <div class="mb-3">
+                      <h2 class="login__subtitulo">Registro</h2><br>
+                      <input type="text" name="id" class="form-control" id="input_ID" placeholder="Ingrese su número de documento" pattern="[A-Za-z0-9]{8,15}" minlength="8" maxlength="15" autofocus required>
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" name="nombre" class="form-control" id="input_name" placeholder="Ingrese su nombre" maxlength="25" pattern="[A-Za-z]{8,15}" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" name="email" class="form-control" id="input_email" placeholder="Ingrese su direccion email" maxlength="20" required>
+                    </div>
+                    <div class="mb-3">
+                        <!-- required pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;>,.?/~_+-=|\]).{8,32}$" title="Al menos 8 caracteres, maximo 32, debe contener una letra minúscula, una mayúscula, un número y un caracter especial" -->
+                        <input type="password" name="password" class="form-control" id="input_pass" placeholder="Contraseña" required pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;>,.?/~_+-=|\]).{8,32}$" title="Al menos 8 caracteres, maximo 32, debe contener una letra minúscula, una mayúscula, un número y un caracter especial" >
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" name="input_pass" class="form-control" id="input_pass2" placeholder="Confirmar Contraseña" required pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;>,.?/~_+-=|\]).{8,32}$" title="Al menos 8 caracteres, maximo 32, debe contener una letra minúscula, una mayúscula, un número y un caracter especial" >
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" name="telefono" class="form-control" id="input_tel" placeholder="Número de telefono" pattern="[0-9]{10}" required>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="submit">Registrarse</button>
+                      </div><br>
+                    <div class="d-flex justify-content-start">
+                        <p class="registro__parrafo">¿Ya tienes una cuenta?</p> &nbsp;
+                        <a class="registro__color__vinculo" href="index.html">Ingrese</a>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/registro.js">    </script>
+    
+</body>
+</html>
