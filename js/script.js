@@ -4,7 +4,7 @@ const validarLogin = ()=>{
     let $email = document.getElementById("email").value;
     let $pass = document.getElementById("pass").value; 
     if ($email === "" || $pass === ""  ) return Swal.fire({
-            icon: 'error',
+            icon: 'Error',
             title: 'Oops...',
             text: 'Los campos no pueden estar vacios!',
         })
